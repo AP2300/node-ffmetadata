@@ -1,9 +1,9 @@
 /* jshint node:true */
 "use strict";
 
-var spawn = require("child_process").spawn,
+var spawn = require("react-native-childprocess").spawn,
 	ffmpeg = spawn.bind(null, process.env.FFMPEG_PATH || "ffmpeg"),
-	fs = require("fs"),
+	fs = require("react-native-fs"),
 	through = require("through"),
 	concat = require("concat-stream");
 
